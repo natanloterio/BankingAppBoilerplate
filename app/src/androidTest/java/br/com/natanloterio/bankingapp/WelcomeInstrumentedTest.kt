@@ -8,6 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
 import br.com.natanloterio.bankingapp.presentation.ui.welcome.CreateAccountActivity
+import br.com.natanloterio.bankingapp.presentation.ui.welcome.WelcomeActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -25,10 +26,7 @@ class WelcomeInstrumentedTest {
     private val PACKAGE = "br.com.natanloterio.bankingapp"
 
     @get:Rule
-    val activity = ActivityTestRule(CreateAccountActivity::class.java)
-
-    @get:Rule
-    val intentsTestRule = IntentsTestRule(CreateAccountActivity::class.java)
+    val activity = ActivityTestRule(WelcomeActivity::class.java)
 
     @Test
     fun userCanOpenLoginScreen() {
@@ -40,8 +38,4 @@ class WelcomeInstrumentedTest {
         onView(withId(R.id.btnCreateAccount)).perform(click())
     }
 
-    @Test
-    fun populatePersonalInformation() {
-        //onView(withId(R.id.CA_name)).perform(withText("Natan Loterio"))
-    }
 }

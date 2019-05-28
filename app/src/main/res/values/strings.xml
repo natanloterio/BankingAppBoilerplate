@@ -29,6 +29,8 @@
     <string name="this_is_a_beta_version_just_avaliable_to_the_following_cities">Esta é uma versão Beta disponível
         apenas para algumas cidades.\nConfira se a sua está contemplada
     </string>
+    <string name="next_step">Avançar</string>
+    <string name="ok_i_understood">Ok, entendi</string>
 
     <string-array name="array_cities">
         <item>Blumenau</item>
