@@ -4,14 +4,27 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:gravity="center">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/just_a_friendly_reminder"/>
+
+    </RelativeLayout>
+
     <LinearLayout
-            android:padding="60dp"
+            android:padding="@dimen/info_box_padding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="left">
 
         <TextView
+                style="@style/AppTheme.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/just_a_friendly_note"/>
@@ -21,10 +34,12 @@
                 android:layout_height="wrap_content"/>
 
         <TextView
+                style="@style/AppTheme.Title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:layout_gravity="left"
+                android:textSize="@dimen/info_box_title2_textsize"
                 android:text="@string/this_is_a_beta_version_just_avaliable_to_the_following_cities"/>
 
 

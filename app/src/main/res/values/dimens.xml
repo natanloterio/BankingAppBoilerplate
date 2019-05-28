@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="info_box_padding">20dp</dimen>
+    <dimen name="info_box_title2_textsize">16sp</dimen>
+    <dimen name="info_box_distance_beween_text">10dp</dimen>
+</resources>

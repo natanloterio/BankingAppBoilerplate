@@ -3,15 +3,27 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orientations_before_we_go"/>
+
+    </RelativeLayout>
 
     <LinearLayout
-            android:padding="20dp"
+            android:padding="@dimen/info_box_padding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="left">
 
         <TextView
+                style="@style/AppTheme.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/orientations_before_we_go"/>
@@ -21,24 +33,34 @@
                 android:layout_height="wrap_content"/>
 
         <TextView
+                style="@style/AppTheme.Title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:layout_gravity="left"
+                android:textSize="@dimen/info_box_title2_textsize"
                 android:text="@string/have_yor_docs_in_hands"/>
 
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:layout_gravity="left"
-                android:text="@string/proof_of_living_expirate_date"/>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
 
         <TextView
+                style="@style/AppTheme.Title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:layout_gravity="left"
+                android:textSize="@dimen/info_box_title2_textsize"
+                android:text="@string/proof_of_living_expirate_date"/>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+        <TextView
+                style="@style/AppTheme.Title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textSize="@dimen/info_box_title2_textsize"
                 android:text="@string/this_association_is_only_allowed_in_brazil"/>
 
 
