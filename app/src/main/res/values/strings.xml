@@ -3,4 +3,38 @@
     <string name="welcome">Welcome</string>
     <string name="login">Login</string>
     <string name="createAccount">New Account</string>
+    <string name="presentation_title">Bem vindo!</string>
+
+    <string name="presentation_intro">
+        Olá!\n
+        Que bom ter você com a gente.\n
+        Somos um sistema de Cooperativas que \nfaz a diferença\n
+        #fazedores
+        \n\n\n
+        Nossa essência é unir pessoas\n para transformar vidas.
+    </string>
+    <string name="as_associate_you_can_have">Como cooperado você pode ter</string>
+    <string name="participation_in_the_results">Participação nos resultados da cooperativa</string>
+    <string name="access_financial_solutions_at_far_price">Acesso a soluções financeiras com valores justos</string>
+    <string name="access_to_free_courses">Cursos gratuitos para dedsenvolvimento pessoal e profissional</string>
+    <string name="orientations_before_we_go">Orientações</string>
+    <string name="have_yor_docs_in_hands">Tenha em mãos seus documentos de identificação como RG, CNG ou RNE e
+        comprovante de residência.
+    </string>
+    <string name="proof_of_living_expirate_date">Seu comprovante deve ter no máximo 90 dias</string>
+    <string name="this_association_is_only_allowed_in_brazil">A adesão digital apenas é permitida para residentes no
+        Brasil e maiores de idade
+    </string>
+    <string name="just_a_friendly_note">Apenas um recado ;)</string>
+    <string name="this_is_a_beta_version_just_avaliable_to_the_following_cities">Esta é uma versão Beta disponível
+        apenas para algumas cidades.\nConfira se a sua está contemplada
+    </string>
+
+    <string-array name="array_cities">
+        <item>Blumenau</item>
+    </string-array>
+
+    <string-array name="array_states">
+        <item>SC</item>
+    </string-array>
 </resources>

@@ -1,29 +1,16 @@
 package br.com.natanloterio.bankingapp
 
 
-import androidx.test.InstrumentationRegistry
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.intent.rule.IntentsTestRule
-import androidx.test.espresso.matcher.RootMatchers.withDecorView
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
-import br.com.natanloterio.bankingapp.presentation.ui.welcome.WelcomeActivity
-import org.junit.Assert.assertEquals
+import br.com.natanloterio.bankingapp.presentation.ui.welcome.CreateAccountActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import androidx.test.espresso.core.internal.deps.guava.collect.Iterables
-import android.content.Intent
-import android.provider.ContactsContract
-import androidx.core.content.MimeTypeFilter.matches
-import androidx.test.espresso.intent.Intents
-import androidx.test.espresso.intent.Intents.*
-import androidx.test.espresso.intent.matcher.ComponentNameMatchers
-import androidx.test.espresso.intent.matcher.IntentMatchers.*
-import org.hamcrest.CoreMatchers
-import org.hamcrest.Matchers.allOf
 
 
 /**
@@ -38,29 +25,23 @@ class WelcomeInstrumentedTest {
     private val PACKAGE = "br.com.natanloterio.bankingapp"
 
     @get:Rule
-    val activity = ActivityTestRule(WelcomeActivity::class.java)
+    val activity = ActivityTestRule(CreateAccountActivity::class.java)
 
     @get:Rule
-    val intentsTestRule = IntentsTestRule(WelcomeActivity::class.java)
-
-//    @Test
-//    fun useAppContext() {
-//        // Context of the app under test.
-//        val appContext = InstrumentationRegistry.getTargetContext()
-//        assertEquals(PACKAGE, appContext.packageName)
-//    }
+    val intentsTestRule = IntentsTestRule(CreateAccountActivity::class.java)
 
     @Test
     fun userCanOpenLoginScreen() {
         onView(withId(R.id.btnLogin)).perform(click())
+    }
 
-        //val receivedIntent = Iterables.getOnlyElement(Intents.getIntents())
+    @Test
+    fun userCanOpenCreateAccountScreen() {
+        onView(withId(R.id.btnCreateAccount)).perform(click())
+    }
 
-       // onView(withId(R.id.btnLogin)).perform(click())
-//        intended(allOf(
-//            toPackage(PACKAGE),
-//            hasType(WelcomeActivity::class),
-//            hasData(ContactsContract.Contacts.CONTENT_URI)))
-
+    @Test
+    fun populatePersonalInformation() {
+        //onView(withId(R.id.CA_name)).perform(withText("Natan Loterio"))
     }
 }
