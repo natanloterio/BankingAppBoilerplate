@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">BankingApp</string>
-    <string name="welcome">Bem vindo ao Sistema Ailos</string>
+    <string name="welcome">Bem vindo ao Sistema Bancário</string>
     <string name="login">Login</string>
     <string name="createAccount">New Account</string>
     <string name="presentation_title">Bem vindo!</string>
