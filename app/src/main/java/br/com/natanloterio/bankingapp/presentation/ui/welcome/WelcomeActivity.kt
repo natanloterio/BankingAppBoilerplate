@@ -20,15 +20,24 @@ class WelcomeActivity : BaseActivity(), WelcomeContract.View {
 
     override fun setupViewListeners() {
 
-        btnCreateAccount.setOnClickListener {
+        btnLogin.setOnClickListener {
             presenter.onClickLogin()
+        }
+
+        btnCreateAccount.setOnClickListener {
+            presenter.onClickCreateAccount()
         }
     }
 
 
 
-    override fun openMainScreen() {
+    override fun openCreateAccount() {
         val intent = Intent(this,CreateAccountActivity::class.java)
+        startActivity(intent)
+    }
+
+    override fun openMainScreen() {
+        val intent = Intent(this,MainActivity::class.java)
         startActivity(intent)
     }
 

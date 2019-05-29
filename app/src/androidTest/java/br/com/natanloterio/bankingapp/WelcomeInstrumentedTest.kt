@@ -3,11 +3,10 @@ package br.com.natanloterio.bankingapp
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
-import br.com.natanloterio.bankingapp.presentation.ui.welcome.CreateAccountActivity
+import br.com.natanloterio.bankingapp.presentation.ui.welcome.MainActivity
 import br.com.natanloterio.bankingapp.presentation.ui.welcome.WelcomeActivity
 import org.junit.Rule
 import org.junit.Test

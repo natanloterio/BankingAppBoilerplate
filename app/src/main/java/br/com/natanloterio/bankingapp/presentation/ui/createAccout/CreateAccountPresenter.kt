@@ -29,18 +29,32 @@ class CreateAccountPresenter(override val view: CreateAccountContract.View) : Cr
     override fun onClickNextStep() {
 
         when(viewModel.showingScreen){
-            PRESENTATION -> {viewModel.showingScreen = WHAT_YOU_WILL_HAVE}
-            WHAT_YOU_WILL_HAVE -> {viewModel.showingScreen = ORIENTATIONS_BEFORE_WE_GO}
+
+            PRESENTATION -> viewModel.showingScreen = WHAT_YOU_WILL_HAVE
+
+            WHAT_YOU_WILL_HAVE -> viewModel.showingScreen = ORIENTATIONS_BEFORE_WE_GO
+
             ORIENTATIONS_BEFORE_WE_GO -> {
                 viewModel.showingScreen = JUST_A_FRIENDLY_NOTE
                 viewModel.nextStepStringResourceID = R.string.ok_i_understood
                 }
-            JUST_A_FRIENDLY_NOTE -> { viewModel.showingScreen = YOUR_BASIC_INFO}
+
+            JUST_A_FRIENDLY_NOTE -> {
+                viewModel.showingScreen = YOUR_BASIC_INFO
+                viewModel.nextStepStringResourceID = R.string.send_my_personal_info
+                viewModel.navigationButtonsVisibility = false
+                }
+
             else -> { viewModel.showingScreen = PRESENTATION}
         }
 
         view.updateView(viewModel)
     }
 
+    override fun onFormIsDone() {
+        viewModel.navigationButtonsVisibility = true
+        view.updateView(viewModel)
+        view.openMainScreen()
+    }
 
 }

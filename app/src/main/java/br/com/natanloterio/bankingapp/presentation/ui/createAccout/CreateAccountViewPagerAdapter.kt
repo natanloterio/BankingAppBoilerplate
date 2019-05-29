@@ -13,12 +13,13 @@ class CreateAccountViewPagerAdapter(fm: FragmentManager?): FragmentPagerAdapter(
             1 -> return FragmentWhatYouWillHave()
             2 -> return FragmentOrientationsBeforeWeGo()
             3 -> return FragmentJustAFriendlyNote()
+            4 -> return FragmentYourBasicInformation()
             else -> return FragmentPresentation()
         }
 
     }
 
     override fun getCount(): Int {
-        return 4
+        return 5
     }
 }

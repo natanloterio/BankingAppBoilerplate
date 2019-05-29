@@ -15,6 +15,7 @@
             </activity>
 
             <activity android:name=".presentation.ui.welcome.CreateAccountActivity"/>
+            <activity android:name=".presentation.ui.welcome.MainActivity"/>
 
     </application>
 </manifest>

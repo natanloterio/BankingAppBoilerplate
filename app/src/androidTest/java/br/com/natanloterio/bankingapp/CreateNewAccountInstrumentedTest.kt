@@ -62,14 +62,4 @@ class CreateNewAccountInstrumentedTest {
         onView(withId(R.id.btnNextStep)).check(matches(withText(R.string.ok_i_understood)))
     }
 
-    @Test fun fifth_screen_should_have_next_button(){
-        onView(withId(R.id.btnNextStep)).perform(click())
-        onView(withId(R.id.btnNextStep)).perform(click())
-        onView(withId(R.id.btnNextStep)).perform(click())
-        onView(withId(R.id.btnNextStep)).perform(click())
-        onView(withId(R.id.btnNextStep)).check(matches(withText(R.string.next_step)))
-    }
-
-
-
 }

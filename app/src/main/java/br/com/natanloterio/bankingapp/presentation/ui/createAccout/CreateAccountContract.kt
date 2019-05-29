@@ -18,5 +18,6 @@ interface CreateAccountContract{
         val view: View
         fun onClickLogin()
         fun onClickNextStep()
+        fun onFormIsDone()
     }
 }

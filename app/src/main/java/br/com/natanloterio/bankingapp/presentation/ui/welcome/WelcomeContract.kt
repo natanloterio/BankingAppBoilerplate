@@ -8,11 +8,13 @@ interface WelcomeContract{
 
     interface View : BaseViewInterface{
         fun openMainScreen()
+        fun openCreateAccount()
 
     }
 
     interface Presenter : BasePresenterInterface {
         val view: View
         fun onClickLogin()
+        fun onClickCreateAccount()
     }
 }

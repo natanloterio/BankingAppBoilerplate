@@ -27,6 +27,14 @@
     </string>
     <string name="next_step">Avançar</string>
     <string name="ok_i_understood">Ok, entendi</string>
+    <string name="lets_start">Vamos começar!</string>
+    <string name="how_whould_you_like_to_be_called">Como você gostaria de ser chamado?</string>
+    <string name="when_is_your_birthday">Qual a sua data de nascimento?</string>
+    <string name="what_is_your_phone_number">Qual o seu celular?</string>
+    <string name="your_name">Seu nome</string>
+    <string name="your_birthday">Data de nascimento</string>
+    <string name="your_phone">Seu telefone</string>
+    <string name="send_my_personal_info">ENVIAR</string>
 
     <string-array name="array_cities">
         <item>Blumenau</item>
