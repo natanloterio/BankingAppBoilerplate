@@ -6,6 +6,38 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
+
+    <style name="AppTheme.Title" parent="AppTheme">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textColor">@color/blackTxt</item>
+        <item name="android:textSize">23.3sp</item>
+        <item name="android:labelTextSize">23.3sp</item>
+    </style>
+
+    <style name="AppTheme.Title2" parent="AppTheme">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">@color/grayTxt</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:labelTextSize">13sp</item>
+    </style>
+
+    <style name="AppTheme.TitleButton" parent="AppTheme">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/myfav</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:labelTextSize">13sp</item>
+    </style>
+
+
+    <style name="AppTheme.BaseBackground" parent="AppTheme">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/blackTxt</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
 
 </resources>

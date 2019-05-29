@@ -1,17 +1,13 @@
 <resources>
     <string name="app_name">BankingApp</string>
-    <string name="welcome">Welcome</string>
+    <string name="welcome">Bem vindo ao Sistema Bancário</string>
     <string name="login">Login</string>
     <string name="createAccount">New Account</string>
     <string name="presentation_title">Bem vindo!</string>
 
     <string name="presentation_intro">
-        Olá!\n
-        Que bom ter você com a gente.\n
-        Somos um sistema de Cooperativas que \nfaz a diferença\n
-        #fazedores
-        \n\n\n
-        Nossa essência é unir pessoas\n para transformar vidas.
+        Olá!\nQue bom ter você com a gente.\nSomos um sistema de Cooperativas que \nfaz a diferença\n#fazedores
+        \n\n\nNossa essência é unir pessoas\n para transformar vidas.
     </string>
     <string name="as_associate_you_can_have">Como cooperado você pode ter</string>
     <string name="participation_in_the_results">Participação nos resultados da cooperativa</string>
