@@ -7,6 +7,7 @@ This project aims to provide a beautiful and realiable boilerplate structure to 
 * mockito
 * roboletric
 * CircleCI
+* Dependency Injection _to be implemented with Dagger2 or Koin_ 
 
 [Link to the Wiki](https://github.com/natanloterio/BankingAppBoilerplate/wiki)
 
