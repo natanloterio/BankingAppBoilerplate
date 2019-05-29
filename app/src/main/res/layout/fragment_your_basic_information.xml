@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/welcome"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:padding="@dimen/info_box_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+
+            <TextView
+                    style="@style/AppTheme.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lets_start"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    style="@style/AppTheme.Title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/info_box_title2_textsize"
+                    android:text="@string/how_whould_you_like_to_be_called"/>
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+            <EditText
+                    style="@style/AppTheme.Title2"
+                    android:id="@+id/edtYourName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:imeActionId="@integer/name"
+                    android:imeActionLabel="@string/your_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/info_box_title2_textsize"/>
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+            <TextView
+                    style="@style/AppTheme.Title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/info_box_title2_textsize"
+                    android:text="@string/when_is_your_birthday"/>
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+            <EditText
+                    style="@style/AppTheme.Title2"
+                    android:id="@+id/edtYourBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:imeActionId="@integer/birthday"
+                    android:imeActionLabel="@string/your_birthday"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/info_box_title2_textsize"/>
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+            <TextView
+                    style="@style/AppTheme.Title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/info_box_title2_textsize"
+                    android:text="@string/what_is_your_phone_number"/>
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+            <EditText
+                    style="@style/AppTheme.Title2"
+                    android:id="@+id/edtYourPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:imeActionLabel="@string/your_phone"
+                    android:inputType="text"
+                    android:imeOptions="actionGo"
+                    android:layout_gravity="left"
+                    android:maxLines="1"
+                    android:textSize="@dimen/info_box_title2_textsize"/>
+
+            <View android:layout_width="match_parent" android:layout_height="@dimen/info_box_distance_beween_text"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
