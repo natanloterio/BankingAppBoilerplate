@@ -38,9 +38,8 @@ class CreateAccountActivity : BaseActivity(), CreateAccountContract.View {
     }
 
     override fun updateView(viewModel: CreateAccountViewModel) {
-
         gotoPage(viewModel.showingScreen)
-
+        btnNextStep.setText(viewModel.nextStepStringResourceID)
     }
 
     private fun gotoPage(showingScreen: ECreateAccountSteps) {
