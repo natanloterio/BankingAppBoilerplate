@@ -8,7 +8,7 @@ This project aims to provide a beautiful and realiable boilerplate structure to 
 * roboletric
 * CircleCI
 
-###[Link to the Wiki](https://github.com/natanloterio/BankingAppBoilerplate/wiki)
+[Link to the Wiki](https://github.com/natanloterio/BankingAppBoilerplate/wiki)
 
 ![](https://github.com/natanloterio/BankingAppBoilerplate/blob/master/github_images/Main.jpeg?raw=true)
 ![](https://github.com/natanloterio/BankingAppBoilerplate/blob/master/github_images/WhatYouCanHave.jpeg?raw=true)
